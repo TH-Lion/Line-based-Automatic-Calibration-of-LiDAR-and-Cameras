@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: auto_calibration
+Description: Description of auto_calibration
+Version: 0.0.10
+Cflags: 
+Libs: -L${prefix}/lib -lauto_calibration_lib -ljsk_recognition_msgs
+Requires: roscpp camera_info_manager dynamic_reconfigure image_transport nodelet sensor_msgs
