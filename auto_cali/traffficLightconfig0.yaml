@@ -1,0 +1,130 @@
+search_r: 1.0
+search_num: 10
+search_r2: 1.0
+search_num2: 1
+search_r3: 10
+search_num3: 1
+x_max: 300.0
+x_min: -1 # 1
+y_min: -30 #-40
+y_max: 30 #40
+z_min: -2.5
+z_max: 5 #10
+dis_threshold: 12 #30 #12 #3 the bigger the more points 60 90
+angle_threshold: 100 #100 not used
+deep_config: 80
+point_r: 2
+txtname: ../data0/list.txt
+foldername: ../data0/
+oxtsfolder: ../data0/
+
+3frame_score: false
+edge_features: false
+line_features: true
+filter_edge_features: false
+filter_line_features: false
+cluster_pointcloud: true
+merge_frame: false
+down_sample: false
+save_pointcloud: true
+save_calibrated_result: true
+gauss_coresize: 5
+edge_contours_size: 50
+canny_threshold_mini: 50
+canny_threshold_max: 100
+normalize_config: 1100 # the bigger the thinner 3000
+normalize_config_thin: 3600 # the bigger the thinner 3000
+delete_ground: true
+WindowSize: 0.5
+
+bias_x: 0
+bias_y: 0
+bias_z: 0
+
+t03: -2.457729e-02
+t13: -6.127237e-02
+t23: -3.321029e-01
+
+
+max_distance: 30
+debug_OnOff: false
+rings: 64
+lowerBound: -24.9
+upperBound: 2.0
+#雷达线束、可视角S   
+show_num: 0
+KKK: 1.0
+#-0.06406980.0636838-0.211781
+#-0.05, -0.186316, -0.111781
+#-0.07, -0.156316, -0.161781
+many_or_one: 3
+wait_msec: 13000
+
+sigma: 50
+step: 0.0001
+alpha: 0.1
+beta: 0.9
+search_iter: 100
+add_dis_weight: true
+add_near_weight: false
+overlap: true
+
+R_lidar2cam0_unbias:
+  data: [6.927964e-03, -9.999722e-01, -2.757829e-03,
+ 	-1.162982e-03, 2.749836e-03, -9.999955e-01,
+	 9.999753e-01, 6.931141e-03, -1.143899e-03]
+
+T_cam02cam2:
+  data: [9.999128e-01, 1.009263e-02, -8.511932e-03,-7.686159e-17,
+ 	-1.012729e-02, 9.999406e-01, -4.037671e-03,-2.989062e-17,
+ 	8.470675e-03, 4.123522e-03, 9.999556e-01,-1.366428e-16,
+	0,0,0,1]
+
+T_frame2frame0_pcs:
+  data: [1, 0, 0,0,
+                0, 1,0,0,
+                 0,0,1,0,
+                 0,0, 0,1]
+T_frame2frame0_images:
+  data: [1, 0, 0,0,
+                0, 1,0,0,
+                 0,0,1,0,
+                 0,0, 0,1]
+fx: 9.812178e+02
+fy: 9.758994e+02
+cx: 6.900000e+02
+cy: 2.471364e+02
+
+k1: -3.791375e-01
+k2: 2.148119e-01
+p1: 1.227094e-03
+p2: 2.343833e-03
+k3: -7.910379e-02
+
+
+extract_pc_edges:
+  nearest_num: 30
+  edge_dis_th: 1.0
+  planarity_th: 1.0
+  ep_dis_th: 0.4
+  neighbor_num: 5
+  NMS_dis: 0.2
+  show_all: false
+  method: 6
+  add_edge: false
+  shuzhi_dis_th: 0.6
+  angle_pixel_dis: 3
+extract_img_edges:
+  lambda: 0.05
+  kappa: 1.0
+test_sobel_weight:
+  weight_x: 1.0
+  weight_y: 1.0
+
+
+rx2: 0.1
+ry2: -0.1
+rz2: -0.6
+t032: -0.1040698 #-0.004069766   -0.0640698 -0.19407
+t132: -0.1063162 #-0.07631618  -0.156316 -0.176316
+t232: -0.281781 #-0.2717806 -0.311781 -0.371781
